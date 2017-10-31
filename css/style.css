@@ -1,0 +1,50 @@
+   .node {
+        fill: #ccc;
+        margin: auto;
+        width: 50%;
+    }
+
+    .link {
+        stroke: #777;
+        stroke-width: 2px;
+        margin: auto;
+        width: 50%;
+    }
+
+.node text {
+  pointer-events: none;
+  font-size: 18px;
+  font-family:Cabin,'Helvetica Neue';
+}
+
+.node:hover text {
+  display: inline;
+}
+
+#photo {
+	position: relative;
+	height: 30%;
+	width: 30%;
+}
+
+#picture {
+	position: relative;
+	width: 500;
+	height: auto;
+	left: 100px;
+}
+
+#quote{
+	position: relative;
+	height: auto;
+    width: auto;
+	
+}
+
+
+svg{
+    position: relative;
+    width: auto;
+    height: auto;
+    margin: auto;
+}
