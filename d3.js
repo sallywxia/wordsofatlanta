@@ -2,7 +2,6 @@ var width = 1500,
       height = 680;
 
 var svg = d3.select('div#nodes')
-    .classed("svg-container", true)
     .append('svg')
     .attr('width', width)
     .attr('height', height);
@@ -33,8 +32,8 @@ d3.json("data.json", function(error, graph) {
 
     node.append("svg:image")
       .attr("xlink:href", function(d) {return d.source})
-      .attr('width', 80)
-      .attr('height', 80)
+      .attr('width', 60)
+      .attr('height', 60)
       .attr('x', function(d){return d.x; })
       .attr('y', function(d){return d.y - 10; })
       .on('click', function(d) {
@@ -43,28 +42,28 @@ d3.json("data.json", function(error, graph) {
       .on("mouseover", function(d)
       {
         d3.select(this).transition()
-          .attr("width", 100)
-          .attr("height", 100);
+          .attr("width", 80)
+          .attr("height", 80);
       })
       .on("mouseout", function(d)
       {
         d3.select(this).transition()
-          .attr("width", 80)
-          .attr("height", 80);
+          .attr("width", 60)
+          .attr("height", 60);
       });
 
     node.append("text")
-      .attr("dx", 12)
+      .attr("dx", 9)
       .attr("x", function(d) { return d.x + 20; })
-      .attr("y", function(d) { return d.y + 90; })
+      .attr("y", function(d) { return d.y + 60; })
       .attr("dy", ".35em")
       .text(function(d) { return d.name })
       .style('text-anchor', 'middle');
 
     force.on('end', function(){
       link.attr('x1', function(d) {return d.source.x;})
-        .attr('y1', function(d) {return d.source.y+40;})
+        .attr('y1', function(d) {return d.source.y+30;})
         .attr('x2', function(d) {return d.target.x;})
-        .attr('y2', function(d) {return d.target.y+40;});
+        .attr('y2', function(d) {return d.target.y+30;});
       });
 });

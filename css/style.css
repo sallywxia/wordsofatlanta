@@ -5,7 +5,7 @@
     }
 
     .link {
-        stroke: #777;
+        stroke: #C5F3FF;
         stroke-width: 2px;
         margin: auto;
         width: 50%;
@@ -14,7 +14,8 @@
 .node text {
   pointer-events: none;
   font-size: 18px;
-  font-family:Cabin,'Helvetica Neue';
+  font-family: Lora;
+  fill:#fff;
 }
 
 .node:hover text {
@@ -34,17 +35,39 @@
 	left: 100px;
 }
 
-#quote{
-	position: relative;
-	height: auto;
-    width: auto;
-	
-}
 
+.card {
+   position:relative;
+   background-color: #B080F2;
+   top:200px;
+   margin: 0 auto;
+
+}
 
 svg{
     position: relative;
     width: auto;
     height: auto;
-    margin: auto;
+    margin-left: 20px;
 }
+
+.text-warning {
+  color: #ffc107;
+}
+
+#quote {
+  font-size: 30px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+}
+
+.p {
+  text-align: left;
+}
+
+
