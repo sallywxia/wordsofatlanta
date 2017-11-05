@@ -772,7 +772,7 @@ function display(data) {
 
   // setup scroll functionality
   var scroll = scroller()
-    .container(d3.select('#graphic'));
+    .container(d3.select('#sections'));
 
   // pass in .step selection as the steps
   scroll(d3.selectAll('.step'));
