@@ -21,7 +21,10 @@ d3.json("data.json", function(error, graph) {
     var link = svg.selectAll('.link')
         .data(graph.links)
         .enter().append('line')
-        .attr('class', 'link');
+        .attr('class', 'link')
+        .style('stroke', function(d){
+          return d.color;
+        });
 
 
     var node = svg.selectAll('.node')

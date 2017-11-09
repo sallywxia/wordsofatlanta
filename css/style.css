@@ -1,12 +1,8 @@
-   .node {
-        fill: #ccc;
-        margin: auto;
-        width: 50%;
-    }
+
 
     .link {
-        stroke: #C5F3FF;
-        stroke-width: 2px;
+        stroke-width: 3px;
+        stroke-dasharray: 2;
         margin: auto;
         width: 50%;
     }
@@ -14,8 +10,16 @@
 .node text {
   pointer-events: none;
   font-size: 18px;
-  font-family: Lora;
+  font-family: futura;
   fill:#fff;
+}
+
+
+
+.node circle {
+  fill: red;
+  stroke: yellow;
+  shape-rendering: crispEdges;
 }
 
 .node:hover text {
@@ -56,7 +60,7 @@ svg{
 }
 
 #quote {
-  font-size: 30px;
+  font-size: 20px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
@@ -70,4 +74,19 @@ svg{
   text-align: left;
 }
 
+#quote1 {
+  background-color: #E988C4;
+}
+
+#quote2 {
+  background-color: #3D79F2;
+}
+
+#quote3 {
+  background-color: #30BD8A;
+}
+
+#about {
+  background-color: #733773;
+}
 
