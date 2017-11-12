@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {"x": 100, "y": 250, "id": 0, "name": "Lonnie King Jr.", "source":"images/LonnieKing_2.png", "quote": ["Quote1", "Quote11", "Quote111"], "person":"Person1", "fixed": true},
+    {"x": 250, "y": 250, "id": 1, "name": "MLK Jr.", "source":"images/MLK_Profile_circle.png", "quote": "Quote2", "person":"Person2", "fixed": true},
+    {"x": 400, "y": 250, "name": "Julian Bond", "source":"images/Julian_Bond_circle.png", "quote": ["Quote1", "Quote11", "Quote111"], "person":"Person1", "fixed": true},
+    {"x": 550, "y": 250, "name": "Rufus Clement", "source":"images/Rufus_Clement_circle.png", "quote": "Quote2", "person":"Person2", "fixed": true},
+    {"x": 700, "y": 250, "name": "John Lewis", "source":"images/John_lewis_circle.png", "quote": ["Quote1", "Quote11", "Quote111"], "person":"Person1", "fixed": true},
+    {"x": 850, "y": 250, "name": "Carolyn Long Banks", "source":"images/Carolyn_Long_Banks_circle.png", "quote": "Quote2", "person":"Person2", "fixed": true},
+    {"x": 1000, "y": 250, "name": "A.T.Walden", "source":"images/A_T_Walden_circle.png", "quote": "Quote2", "person":"Person2", "fixed": true},
+    
+    {"x": 100, "y": 350, "name": "Ivan Allen Jr.", "source":"images/Ivan_Allen_jr_circle.png", "quote": ["Quote1", "Quote11", "Quote111"], "person":"Person1", "fixed": true},
+    {"x": 250, "y": 350, "name": "William Hartsfield", "source":"images/william-hartsfield_circle.png", "quote": "Quote2", "person":"Person2", "fixed": true},
+    {"x": 400, "y": 350, "name": "Ralph McGill", "source":"images/Ralph_McGill_circle.png", "quote": ["Quote1", "Quote11", "Quote111"], "person":"Person1", "fixed": true},
+    {"x": 550, "y": 350, "name": "Herbert Jenkins", "source":"images/Herbert_Jenkins_circle.png", "quote": "Quote2", "person":"Person2", "fixed": true},
+    
+    {"x": 100, "y": 450, "name": "Calvin L. Craig", "source":"images/AnAppealForHumanRights.jpg", "quote": "Quote1", "person":"Person1", "fixed": true},
+    {"x": 250, "y": 450, "name": "Ernest Vandiver", "source":"images/ernest_vandiver_circle.png", "quote": "Quote2", "person":"Person2", "fixed": true},
+    {"x": 400, "y": 450, "name": "Lester Maddox", "source":"images/Lestor_Maddox_circle.png", "quote": "Quote1", "person":"Person1", "fixed": true},
+    {"x": 550, "y": 450, "name": "Richard H. Rich", "source":"images/Morris_rich_circle.png", "quote": "Quote1", "person":"Person1", "fixed": true}
+
+
+  ],
+
+
+  "links": [
+    {"source": 0, "target": 1},
+    {"source": 1, "target": 2},
+    {"source": 2, "target": 3},
+    {"source": 3, "target": 4},
+    {"source": 4, "target": 5},
+    {"source": 5, "target": 6},
+
+    {"source": 7, "target": 8},
+    {"source": 8, "target": 9},
+    {"source": 9, "target": 10},
+
+    {"source": 11, "target": 12},
+    {"source": 12, "target": 13},
+    {"source": 13, "target": 14}
+
+  ]
+}
