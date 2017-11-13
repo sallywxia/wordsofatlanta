@@ -44,8 +44,8 @@
 
 #vizQuotes {
   font-size: 20px;
-  position: fixed;
-  display: inline-block;
+  position: relative;
+  display: inline;
   margin: 5px;
   color: white;
   width: 250px;
