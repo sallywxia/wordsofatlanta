@@ -18,7 +18,7 @@ function display(error, json) {
       .attr("height", height); 
 
   var force = d3.forceSimulation() 
-      .force("link", d3.forceLink().id(function(d) { return d.index }).distance(100).strength(1)) 
+      .force("link", d3.forceLink().id(function(d) { return d.index }).distance(150)) 
       .force("y", function(d) {return d.y})
       .force("x", function(d) {return d.x})
 
@@ -30,19 +30,34 @@ function display(error, json) {
       .data(json.links)
       .enter()
       .append("line")
-      .attr("class", "link");
+      .attr("class", "link")
+      .style("stroke", function(d) { return d.color});
 
   var node = svg.selectAll(".node")
       .data(json.nodes)
       .enter().append("g")
       .attr("class", "node");  
 
-  node.append('circle')
-      .attr('r', 13)
-      .attr('cx', function(d) {return d.x})
-      .attr('cy', function(d) {return d.y})
-      .attr('fill', function (d) {
-          return d.color;
+  node.append("svg:image")
+      .attr("xlink:href", function(d) {return d.source})
+      .attr('width', 50)
+      .attr('height', 50)
+      .attr('x', function(d){return d.x; })
+      .attr('y', function(d){return d.y - 10; })
+      .on('click', function(d) {
+          document.getElementById("vizQuotes").innerHTML = d.quote;
+        })
+      .on("mouseover", function(d)
+      {
+        d3.select(this).transition()
+          .attr("width", 80)
+          .attr("height", 80);
+      })
+      .on("mouseout", function(d)
+      {
+        d3.select(this).transition()
+          .attr("width", 60)
+          .attr("height", 60);
       });
 
   node.append("text")
@@ -55,7 +70,7 @@ function display(error, json) {
           return d.name
       });
 
-  force.on("end", function () {
+  force.on("tick", function () {
       link.attr("x1", function (d) {
               return d.source.x;
           })
@@ -84,12 +99,16 @@ function display(error, json) {
       .style('opacity', function (d, i) { return i === index ? 1 : 0.1; });
 
     // activate current section
-    var highlightNode = d3.selectAll("circle").filter(function (d, i) {return i == index;});
-    var otherNodes = d3.selectAll("circle").filter(function (d, i) { return i != index;});
-
-    highlightNode.attr("r", 21);
-    otherNodes.attr("r", 13);
-    document.getElementById("quote").innerHTML = highlightNode.data()[0].quote;
+    var highlightNode = d3.selectAll("image").filter(function (d, i) {return i == index;});
+    var otherNodes = d3.selectAll("image").filter(function (d, i) { return i != index;});
+    
+    highlightNode
+      .attr("width", 75)
+      .attr("height", 75);
+    otherNodes
+      .attr("width", 50)
+      .attr("height", 50);
+    document.getElementById("vizQuotes").innerHTML = highlightNode.data()[0].quote;
     
   });
 }
