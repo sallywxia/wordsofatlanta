@@ -22,9 +22,6 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
-     <!-- D3 -->
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-
      <!--css-->
   <link rel="stylesheet" href="css/style.css" type="text/css" />
 
@@ -219,87 +216,62 @@
 
 
             <!--dataviz--> <!--This is where the nodes come in, so much fun!!! :))))-.--> 
-    <section id="dataviz">
+    <section>
       <div class="container">
-        <div class="row">
-
-          <!--<div class="col-lg-8">-->
-          <div class="card">
-  <div class="card-header">
-    <div id ="group">Group name</div>
-  </div>
-  <div class="card-block">
-    <blockquote class="card-blockquote" id="quote">
-     
-    </blockquote>
-  </div>
-</div>
-
-
-      
-
-          <div id="nodes">
-          <script src="d3.js"></script>
+        <div id='graphic'>
+          <div id='sections'>
+            <section class="step">
+              <div class="title">1960</div>
+              <img src="MLK_Profile.jpg" style="height: 30px; width: 30px;" />
+              I did what no presenter should ever do: I watched my own talk.<br/><br/>My first visit to OpenVis Conf in 2013.
+            </section>
+            <section class="step">
+              <div class="title">1960</div>
+              As expected, I could only focus on the flaws: the rushed speech, the odd phrases, and, most especially, all the filler words. In fact, I found 180 filler words in my 30 minute talk.
+            </section>
+            <section class="step">
+              <div class="title">1960</div>
+              Here are all 5,040 words of my talk.
+            </section>
+            <section class="step">
+              <div class="title">My Stumbles</div>
+              And here are all the fillers I used in those 30 minutes.
+            </section>
+            <section class="step">
+              <div class="title">Um's, Ah's &amp; Uh's</div>
+              I almost exclusively used these three fillers. Um's and Ah's made up over 80%, with Uh's trailing behind.
+            </section>
+            <section class="step">
+              <div class="title">Fillers Over Time</div>
+              I hoped that all these blunders were toward the beginning of my talk. And the data suggests that fewer fillers are used as I get into it. Perhaps the talk started out rough and improved as I found my groove.
+            </section>
+            <section class="step">
+              <div class="title">Ramping Back Up</div>
+              Unfortunately, the trend does not continue. Midway into the talk my Um's and Ah's spike. I continue to use them pretty consistently throughout the rest of the talk.
+            </section>
+            <section class="step">
+              <div class="title">The Cough Effect</div>
+              My theory is that at this critical halfway point in my talk, I heard a dry cough indicative of the audience's waning interest. This caused self-confidence to collapse and forced me out of my groove.<br/><br/>A competing theory is that I just hadn't practiced the last half of my speech as much.
+            </section>
+            <section class="step">
+              <div class="title">Best of Luck to Me in 2015</div>
+              The world may never know, or care, but hopefully these insights improve my speaking in 2015. Though preliminary results aren't looking so good.
+            </section>
           </div>
-
-
-          <!--</div>-->
-        </div>
-      </div>
-    </section>
-
-
-
-
-    <!-- Download Section -->
-    <section id="Resource" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-8 mx-auto">
-          <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <!--<a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>-->
-        </div>
-      </div>
-
-    </section>
-
-
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>Contact Start Bootstrap</h2>
-            <p>Feel free to leave us a comment on the
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">Grayscale template overview page</a>
-              on Start Bootstrap to give some feedback about this theme!</p>
-            <ul class="list-inline banner-social-buttons">
-              <li class="list-inline-item">
-                <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-twitter fa-fw"></i>
-                  <span class="network-name">Twitter</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://github.com/BlackrockDigital/startbootstrap" class="btn btn-default btn-lg">
-                  <i class="fa fa-github fa-fw"></i>
-                  <span class="network-name">Github</span>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="https://plus.google.com/+Startbootstrap/posts" class="btn btn-default btn-lg">
-                  <i class="fa fa-google-plus fa-fw"></i>
-                  <span class="network-name">Google+</span>
-                </a>
-              </li>
-            </ul>
+          <div id= 'quote'>
+          Quote goes here!
+          </div>
+          <div id='vis'>
+          </div>
+          <div id="extra-space">
           </div>
         </div>
       </div>
+      <script src="lib/d3.js"></script>
+      <script src="js/scroller.js"></script>
+      <script src="js/d3.js"></script>
     </section>
-
-    <!-- Map Section -->
-    <div id="map"></div>
+   
 
     <!-- Footer -->
     <footer>
