@@ -16,7 +16,7 @@
     {"x": 100, "y": 450, "name": "Calvin L. Craig", "source":"images/Craig_kkk_circle.png", "color": "#30BD8A","quote": "We are for the Christian-Protestant religion, the U.S. Government and Constitution thereof and , of course, White Supremacy", "fixed": true},
     {"x": 250, "y": 450, "name": "Ernest Vandiver", "source":"images/ernest_vandiver_circle.png", "color": "#30BD8A", "quote": "Wherever M.L.King, Jr., has been there has followed in his wake a wave of crimes including stabbing, bombings, and inciting of riots, barratry, destruction of propoerty and many others.For these reasons, he is not welcome to Georgia.", "fixed": true},
     {"x": 400, "y": 450, "name": "Lester Maddox", "source":"images/Lestor_Maddox_circle.png", "color": "#30BD8A", "quote": "Most people feel as we do, but they're just not organized.", "fixed": true},
-    {"x": 550, "y": 450, "name": "Richard H. Rich", "source":"images/Morris_rich_circle.png", "color": "#30BD8A", "quote": "I didn't care if another Negro EVER comes into my store", "fixed": true}
+    {"x": 550, "y": 450, "name": "Richard H. Rich", "source":"images/rich_circle.png", "color": "#30BD8A", "quote": "I didn't care if another Negro EVER comes into my store", "fixed": true}
 
 
   ],
