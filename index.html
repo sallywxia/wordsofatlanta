@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Words of Atlanta</title>
+    <title>614 Days</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Words of Atlanta</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><i>614 Days</i></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -44,7 +44,7 @@
               <a class="nav-link js-scroll-trigger" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#Resource">Project Resource</a>
+              <a class="nav-link js-scroll-trigger" href="data_visualization.html">Visualization</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -58,17 +58,17 @@
     <header class="masthead">
       <div class="intro-body">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <h2 style="font-size: 50px；color:grey">About Words of Atlanta</h2>
-              <p class="intro-text" style="font-size: 30px">"But the Second Battle of Atlanta is primarily - and surprisingly - nonviolent. And it is fought with love as well as hate."</p>
-              <p class="intro-text" style="font-size: 30px">-Look Magazine, April, 1961</p>
+            
+              <p id="title" style="font-size: 300px; text-shadow: 3px 3px 8px #E988C4;"><i>614</i></p>
+              <p id="description" style ="font-size: 30px;"> January 24, 1960 - September 28, 1961</p>
+              <p id="title" style="font-size: 300px; text-shadow: 3px 3px 8px #E988C4;"><i>Days</i></p>
+        
               <a href="#about" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
             </div>
           </div>
-        </div>
+       
       </div>
     </header>
 
@@ -77,9 +77,17 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <h2 style="font-size: 50px">About Words of Atlanta</h2>
-            <p>"Words of Atlanta” is a data visualization on the Civil Rights Movement in Atlanta, specifically focusing on the year of 1960 and early 1961.</p> 
-            <p>Mainly driven by students and led by Martin Luther King Jr., Atlanta’s Civil Rights Movement is fascinating period of time where people with different beliefs came together to avoid riots in Atlanta.</p>
+            <h2 style="font-size: 50px">About <i>614 Days</i></h2>
+                  <div class="row">
+              <div class="col-6">
+                <p class="intro-text" style="font-size: 20px">"But the Second Battle of Atlanta is primarily - and surprisingly - nonviolent. And it is fought with love as well as hate."</p>
+                 <p class="intro-text" style="font-size: 20px">-Look Magazine, April, 1961</p>
+              </div>
+              <div class="col-6">
+                <img src="images/Look_Magazine_cover.png" alt="Mountain View" width="500">
+              </div>
+              </div> <!--end of row-->
+            <p><i>614 Days</i>is an interactive storytelling experience on Atlanta Student Movement, from Janurary 24, 1960, when Martin Luther King Jr. came back to Atlanta to September 28, 1961, when the lunch counter was desegregated as a result of the movement. </p> 
             <p>Realizing the complexity and depth of that specific period of history cannot be illustrated with a simple timeline, the main form of interaction is through quotes and words said and recorded by different groups of people to give a full context of the story as well as to draw light on the significance of the events.</p>
             <a href="#quote1" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
@@ -206,9 +214,7 @@
                
 
           </div>
-           <a href="#dataviz" class="btn btn-circle js-scroll-trigger">
-                <i class="fa fa-angle-double-down animated"></i>
-            </a>
+                <a href="data_visualization.html"><i class="fa fa-angle-down fa-6"><p id="project_text"><b>Take me to visualization</b></p></i></a>
         </div>
       </div>
     </section>
@@ -216,57 +222,9 @@
 
 
             <!--dataviz--> <!--This is where the nodes come in, so much fun!!! :))))-.--> 
-    <section>
-      <div class="container">
-        <div id='graphic'>
-          <div id='sections'>
-            <section class="step">
-              <div class="title">1960</div>
-              <img src="MLK_Profile.jpg" style="height: 30px; width: 30px;" />
-              I did what no presenter should ever do: I watched my own talk.<br/><br/>My first visit to OpenVis Conf in 2013.
-            </section>
-            <section class="step">
-              <div class="title">1960</div>
-              As expected, I could only focus on the flaws: the rushed speech, the odd phrases, and, most especially, all the filler words. In fact, I found 180 filler words in my 30 minute talk.
-            </section>
-            <section class="step">
-              <div class="title">1960</div>
-              Here are all 5,040 words of my talk.
-            </section>
-            <section class="step">
-              <div class="title">My Stumbles</div>
-              And here are all the fillers I used in those 30 minutes.
-            </section>
-            <section class="step">
-              <div class="title">Um's, Ah's &amp; Uh's</div>
-              I almost exclusively used these three fillers. Um's and Ah's made up over 80%, with Uh's trailing behind.
-            </section>
-            <section class="step">
-              <div class="title">Fillers Over Time</div>
-              I hoped that all these blunders were toward the beginning of my talk. And the data suggests that fewer fillers are used as I get into it. Perhaps the talk started out rough and improved as I found my groove.
-            </section>
-            <section class="step">
-              <div class="title">Ramping Back Up</div>
-              Unfortunately, the trend does not continue. Midway into the talk my Um's and Ah's spike. I continue to use them pretty consistently throughout the rest of the talk.
-            </section>
-            <section class="step">
-              <div class="title">The Cough Effect</div>
-              My theory is that at this critical halfway point in my talk, I heard a dry cough indicative of the audience's waning interest. This caused self-confidence to collapse and forced me out of my groove.<br/><br/>A competing theory is that I just hadn't practiced the last half of my speech as much.
-            </section>
-            <section class="step">
-              <div class="title">Best of Luck to Me in 2015</div>
-              The world may never know, or care, but hopefully these insights improve my speaking in 2015. Though preliminary results aren't looking so good.
-            </section>
-          </div>
-          <div id= 'vizQuotes'>
-          Quote goes here!
-          </div>
-          <div id='vis'>
-          </div>
-          <div id="extra-space">
-          </div>
-        </div>
-      </div>
+    
+
+
       <script src="lib/d3.js"></script>
       <script src="js/scroller.js"></script>
       <script src="js/d3.js"></script>

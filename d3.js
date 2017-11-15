@@ -38,7 +38,7 @@ d3.json("data.json", function(error, graph) {
       .attr('width', 60)
       .attr('height', 60)
       .attr('x', function(d){return d.x; })
-      .attr('y', function(d){return d.y - 10; })
+      .attr('y', function(d){return d.y - 20; })
       .on('click', function(d) {
           document.getElementById("quote").innerHTML = d.quote;
         })
@@ -61,7 +61,10 @@ d3.json("data.json", function(error, graph) {
       .attr("y", function(d) { return d.y + 60; })
       .attr("dy", ".35em")
       .text(function(d) { return d.name })
-      .style('text-anchor', 'middle');
+      .style('text-anchor', 'middle')
+      .style('fill', function(d){
+        return d.color;
+      });
 
     force.on('end', function(){
       link.attr('x1', function(d) {return d.source.x;})

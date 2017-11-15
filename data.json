@@ -6,7 +6,7 @@
     {"x": 550, "y": 250, "name": "Rufus Clement", "source":"images/Rufus_Clement_circle.png", "color": "#E988C4", "quote": "We are not going to tell you what you can or can't do but let us give you some advice. Before you take action, picketing or demonstrating, you should draw up a bill of particulars as to what your grievances are. If you do a good job, we will see that it gets printed in the local newspapers.", "fixed": true},
     {"x": 700, "y": 250, "name": "John Lewis", "source":"images/John_lewis_circle.png", "color": "#E988C4", "quote": "“[W]e were all about” a “mass movement, an irre-sistible  movement of the masses. Not a handful of lawyers in a closed court-room, but hundreds, thousands of everyday people ..taking their cause and belief to the streets. -John Lewis” ", "fixed": true},
     {"x": 850, "y": 250, "name": "Carolyn Long Banks", "source":"images/Carolyn_Long_Banks_circle.png", "color": "#E988C4", "quote": "I [am] one of the many persons he arrested. It was Chief Jenkins who protected us—who made sure that even though we were determined to be arrested, that we were going to be arrested kindly and gently.", "fixed": true},
-    {"x": 1000, "y": 250, "name": "A.T.Walden", "source":"images/A_T_Walden_circle.png", "color": "#E988C4", "quote": "Quote2", "fixed": true},
+   
     
     {"x": 100, "y": 350, "name": "Ivan Allen Jr.", "source":"images/Ivan_Allen_jr_circle.png", "color": "#3D79F2", "quote": "We won't let this happen here", "fixed": true},
     {"x": 250, "y": 350, "name": "William Hartsfield", "source":"images/william-hartsfield_circle.png", "color": "#3D79F2", "quote": "We are a city too busy to hate. Atlanta does not cling to the past. People who swear on the old Southern traditions don't know what the hell they are.", "fixed": true},
@@ -28,15 +28,17 @@
     {"source": 2, "target": 3, "color": "#E988C4"},
     {"source": 3, "target": 4, "color": "#E988C4"},
     {"source": 4, "target": 5, "color": "#E988C4"},
-    {"source": 5, "target": 6, "color": "#E988C4"},
+  
 
+    {"source": 6, "target": 7, "color": "#3D79F2"},
     {"source": 7, "target": 8, "color": "#3D79F2"},
     {"source": 8, "target": 9, "color": "#3D79F2"},
-    {"source": 9, "target": 10, "color": "#3D79F2"},
 
+    {"source": 10, "target": 11, "color": "#30BD8A"},
     {"source": 11, "target": 12, "color": "#30BD8A"},
-    {"source": 12, "target": 13, "color": "#30BD8A"},
-    {"source": 13, "target": 14, "color": "#30BD8A"}
+    {"source": 12, "target": 13, "color": "#30BD8A"}
 
   ]
+
+  
 }
