@@ -40,8 +40,8 @@ function display(error, json) {
 
   node.append("svg:image")
       .attr("xlink:href", function(d) {return d.source})
-      .attr('width', 60)
-      .attr('height', 60)
+      .attr('width', 50)
+      .attr('height', 50)
       .attr('x', function(d){return d.x; })
       .attr('y', function(d){return d.y - 20; })
       .on('click', function(d) {
@@ -50,14 +50,14 @@ function display(error, json) {
       .on("mouseover", function(d)
       {
         d3.select(this).transition()
-          .attr("width", 80)
-          .attr("height", 80);
+          .attr("width", 75)
+          .attr("height", 75);
       })
       .on("mouseout", function(d)
       {
         d3.select(this).transition()
-          .attr("width", 60)
-          .attr("height", 60);
+          .attr("width", 50)
+          .attr("height", 50);
       });
 
   node.append("text")
@@ -103,7 +103,9 @@ function display(error, json) {
     // activate current section
     var highlightNode = d3.selectAll("image").filter(function (d, i) {return i == index;});
     var otherNodes = d3.selectAll("image").filter(function (d, i) { return i != index;});
-    
+    var neighbors = highlightNode.data()[0].neighbors;
+    var neighborNodes = d3.selectAll("image").filter(function (d, i) {return neighbors.includes(i)})
+
     highlightNode
       .attr("width", 75)
       .attr("height", 75);
@@ -112,8 +114,11 @@ function display(error, json) {
       .attr("width", 50)
       .attr("height", 50);
 
+    neighborNodes
+      .attr("width", 67.5)
+      .attr("height", 67.5);
+
     document.getElementById("vizQuotes").innerHTML = highlightNode.data()[0].quote;
-    document.getElementById("vizQuotes").innerHTML = highlightNode.data()[0].neighbors;
     
   });
 }
