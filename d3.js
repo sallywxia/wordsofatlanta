@@ -1,6 +1,8 @@
 var width = 1500,
       height = 680;
 
+
+
 var svg = d3.select('div#nodes')
     .append('svg')
     .attr('width', width)
@@ -8,7 +10,7 @@ var svg = d3.select('div#nodes')
 
 var force = d3.layout.force()
     .size([width, height])
-    .linkDistance(100);
+    .linkDistance(80);
 
 d3.json("data.json", function(error, graph) {
     if (error) throw error;
@@ -47,6 +49,7 @@ d3.json("data.json", function(error, graph) {
         d3.select(this).transition()
           .attr("width", 80)
           .attr("height", 80);
+         
       })
       .on("mouseout", function(d)
       {
@@ -54,6 +57,16 @@ d3.json("data.json", function(error, graph) {
           .attr("width", 60)
           .attr("height", 60);
       });
+
+
+
+    //node.append("svg:circle")
+       // .attr('width', 60)
+       // .attr('height', 60)
+       // .attr("cx", function(d){ return d.x + 30; })
+      //  .attr("cy", function(d){ return d.y - 20; })
+        //.style('fill', 'blue');
+
 
     node.append("text")
       .attr("dx", 9)
@@ -65,6 +78,9 @@ d3.json("data.json", function(error, graph) {
       .style('fill', function(d){
         return d.color;
       });
+
+
+    
 
     force.on('end', function(){
       link.attr('x1', function(d) {return d.source.x;})

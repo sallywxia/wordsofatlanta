@@ -1,0 +1,90 @@
+<link rel="stylesheet" href="lightbox.css" type="text/css" />
+<div class='filter'>
+  <h1>
+  Pure CSS Sliding Lightbox
+</h1>
+  <p>
+    This project takes advantage of the ':target' selector in CSS; and, using a bit of markup and CSS you already know, creates a lightbox effect with 2 arrows and an exit button.
+  </p>
+  <div id="thumblist">
+    <p>
+      click an image to make it bigger!
+    </p>
+    <a href="#image1">
+      <!--what the user sees before clicking anything-->
+      <img src="https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx" class="thumb" />
+    </a>
+
+
+    <div id="image1" class="lightbox">
+      <!--what the user sees after clicking the first image-->
+      <a href="#_">
+        <!--no need for a left arrow because there is no previous image to go to-->
+        <img src="https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx" />
+        <!--this is the actual image that 'grows'-->
+      </a>
+      <a href="#_" class='exit'>
+        <!--this href takes out out of full screen. -->
+        &times;
+        <!--exit button-->
+      </a>
+
+
+      <a href="#image2" class='next'>
+        <!--this href leads you to the next image in the slideshow-->
+        &gt;
+        <!--next button-->
+      </a>
+    </div>
+
+
+
+    <a href="#image2">
+      <!--this href leads you to the previous image-->
+      <img src="https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx" class="thumb" />
+      <!--left arrow button-->
+    </a>
+
+    <div id="image2" class="lightbox">
+      <!--from here on out, the same comments apply. Notice that the href for the previous selector is set to the id of the lightbox div for the previous image, opposite goes for the next selector. This is what makes the slider work. There are some that use CSS and huge margins, but I prefer to keep my markup and css simple enough to explain. Hope you can use this!-->
+      <a href="#image1" class='previous'>
+        &lt;
+      </a>
+
+      <a href="#_">
+        <img src="https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx" />
+      </a>
+
+      <a href="#_" class='exit'>
+        &times;
+      </a>
+
+      <a href="#image3" class='next'>
+        &gt;
+      </a>
+    </div>
+
+
+    <a href="#image3">
+      <img src="https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx" class="thumb" />
+    </a>
+
+    <div id="image3" class="lightbox">
+      <a href="#image2" class='previous'>
+        &lt;
+      </a>
+
+      <a href="#_">
+        <img src="https://www.royalcanin.com/~/media/Royal-Canin/Product-Categories/cat-adult-landing-hero.ashx" />
+        <p class="description">
+          You can even add image descriptions.
+        </p>
+      </a>
+      <a href="#_" class='exit'>
+        &times;
+      </a>
+    </div>
+
+     <!--end of image 3-->
+  </div>  <!--end of thumbnail-->
+</div>

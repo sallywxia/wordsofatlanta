@@ -9,9 +9,13 @@
 function display(error, json) {
   // create a new plot and
   // display it
-
+  var inn = 0;
+  var tempX;
+  var tempY;
   var width = 1200,
             height = 600
+
+            var secNodes = [[1,2, 11],[0,1,6,7],[0,3], [2,7,11], [3, 8], [0, 1, 9, 11], [0,2, 13], [6], [0], [0, 1, 5] ];
 
   var svg = d3.select("#vis").append("svg")
       .attr("width", width)
@@ -38,39 +42,66 @@ function display(error, json) {
       .enter().append("g")
       .attr("class", "node");  
 
+  node.append("circle")
+      .attr("cx", function(d) { return d.x + 40; })
+      .attr("cy", function(d) { return d.y + 19; })
+      .attr("r", 44)
+      .style("stroke-width", 3)
+      .style("fill-opacity", 0)
+      .style("stroke", function(d){ return d.color; });
+
   node.append("svg:image")
       .attr("xlink:href", function(d) {return d.source})
       .attr('width', 50)
       .attr('height', 50)
       .attr('x', function(d){return d.x; })
       .attr('y', function(d){return d.y - 20; })
-      .on('click', function(d) {
-          document.getElementById("vizQuotes").innerHTML = d.quote;
+      .on('click', function(d, iny) {
+          var tt = d3.selectAll("circle").filter(function (d, i) {
+            if(iny == i) {
+              return true;
+            } 
+          });
+
+          var ty = d3.selectAll("circle").filter(function (d, i) {
+            if(iny != i) {
+              return true;
+            } 
+          });
+
+          tt.style("stroke-width", "10");
+          ty.style("stroke-width", "3");
+          document.getElementById("vizQuotes").innerHTML = d.quote[inn];
         })
       .on("mouseover", function(d)
       {
+        tempX = d3.select(this).attr("width");
+        tempY = d3.select(this).attr("height");
         d3.select(this).transition()
           .attr("width", 75)
           .attr("height", 75);
       })
       .on("mouseout", function(d)
-      {
+      { 
+        //alert(d3.select(this).index());
         d3.select(this).transition()
-          .attr("width", 50)
-          .attr("height", 50);
+          .attr("width", tempX)
+          .attr("height", tempY);
       });
 
   node.append("text")
-      .attr("x", function(d) { return d.x -15; })
-      .attr("y", function(d) { return d.y + 60; })
+      .attr("x", function(d) { return d.x - 15; }) 
+      .attr("y", function(d) { return d.y + 60; }) 
       .style("font-family", "futura")
       .style("text-anchor", "middle")
       .style("fill", function(d){ return d.color; })
-      .style("font-size", "18px")
+      .style("font-size", "15px")
 
       .text(function (d) {
           return d.name
       });
+
+
 
   force.on("tick", function () {
       link.attr("x1", function (d) {
@@ -97,28 +128,61 @@ function display(error, json) {
   // setup event handling
   scroll.on('active', function (index) {
     // highlight current step text
+    inn = index;
     d3.selectAll('.step')
       .style('opacity', function (d, i) { return i === index ? 1 : 0.3; });
 
     // activate current section
-    var highlightNode = d3.selectAll("image").filter(function (d, i) {return i == index;});
-    var otherNodes = d3.selectAll("image").filter(function (d, i) { return i != index;});
-    var neighbors = highlightNode.data()[0].neighbors;
-    var neighborNodes = d3.selectAll("image").filter(function (d, i) {return neighbors.includes(i)})
+    var highlightNode = d3.selectAll("image").filter(function (d, i) {return secNodes[index].includes(i); });
+    
+
+    var otherNodes = d3.selectAll("image").filter(function (d, i) {
+      if (!secNodes[index].includes(i)) {
+
+        return true;
+      } 
+    });
+
+    var highCircle = d3.selectAll("circle").filter(function (d, i) {return secNodes[index].includes(i); });
+
+    var otherCircle = d3.selectAll("circle").filter(function(d, i) { return  !secNodes[index].includes(i); });
+    //var neighbors = highlightNode.data()[0].neighbors;
+    //var neighborNodes = d3.selectAll("image").filter(function (d, i) {return neighbors.includes(i)})
+
+    //console.log(neighborNodes._groups.toString());
 
     highlightNode
       .attr("width", 75)
       .attr("height", 75);
+      
+      // .attr("cx", function(d) { return d.x; })
+
+      // .attr("cy", function(d) { return d.y; })
+      // .attr("r", 50)
+      // .attr('class', 'image-border')
+      //.attr('width', 75)
+      //.attr('height', 75)
+      //.style("fill", "blue");
 
     otherNodes
       .attr("width", 50)
       .attr("height", 50);
+      //.select("circle")
+      //.remove("circle");
 
-    neighborNodes
-      .attr("width", 67.5)
-      .attr("height", 67.5);
+    highCircle
+    .style("display", "inline");
 
-    document.getElementById("vizQuotes").innerHTML = highlightNode.data()[0].quote;
+    otherCircle
+    .style("display", "none");
+
+    // neighborNodes
+    //   .attr("width", 75)
+    //   .attr("height", 75);
+
+    document.getElementById("vizQuotes").innerHTML = highlightNode.data()[0].quote[index];
+    highCircle.filter(function(d, i){return i == 0}).style("stroke-width", "10");
+    highCircle.filter(function(d, i) {return i != 0}).style("stroke-width","3");
     
   });
 }

@@ -1,22 +1,89 @@
 {
   "nodes": [
-    {"x": 100, "y": 250, "name": "Lonnie King Jr.", "source":"images/LonnieKing_2.png", "color": "#E988C4", "quote": "We've got to do this here", "neighbors": [2,3,4], "fixed": true},
-    {"x": 250, "y": 250, "name": "MLK Jr.", "source":"images/MLK_Profile_circle.png", "color": "#E988C4", "quote": "I do not feel we did anything wrong in going to Rich’s today and seeking to be served. We went there peacefully, non-violently, and in the spirit of love",  "neighbors": [1,3,4], "fixed": true},
-    {"x": 400, "y": 250, "name": "Julian Bond", "source":"images/Julian_Bond_circle.png", "color": "#E988C4", "quote": "He was a hometown boy.. so it was hard for us to look at him as Martin Luther King, Jr. It was hard for us to revere him, I think, the way other people did.", "neighbors": [6,1,4], "fixed": true},
-    {"x": 550, "y": 250, "name": "Rufus Clement", "source":"images/Rufus_Clement_circle.png", "color": "#E988C4", "quote": "We are not going to tell you what you can or can't do but let us give you some advice. Before you take action, picketing or demonstrating, you should draw up a bill of particulars as to what your grievances are. If you do a good job, we will see that it gets printed in the local newspapers.", "neighbors": [5,6,7], "fixed": true},
-    {"x": 700, "y": 250, "name": "John Lewis", "source":"images/John_lewis_circle.png", "color": "#E988C4", "quote": "“[W]e were all about” a “mass movement, an irre-sistible  movement of the masses. Not a handful of lawyers in a closed court-room, but hundreds, thousands of everyday people ..taking their cause and belief to the streets. -John Lewis” ", "neighbors": [2,3,4], "fixed": true},
-    {"x": 850, "y": 250, "name": "Carolyn Long Banks", "source":"images/Carolyn_Long_Banks_circle.png", "color": "#E988C4", "quote": "I [am] one of the many persons he arrested. It was Chief Jenkins who protected us—who made sure that even though we were determined to be arrested, that we were going to be arrested kindly and gently.", "neighbors": [2,3,4], "fixed": true},
+    {"x": 100, "y": 250, "name": "Lonnie King Jr.", "source":"images/LonnieKing_2.png", "color": "#E988C4", 
+    "quote": ["",
+        "We've got to do this here - Lonnie King Jr.",
+        "The presence of the presidents scared us to death - Lonnie King Jr.",
+        "","",
+        "The white papers always underestimated the numbers. And they changed our verbs in quotes to make us sound uneducated, too. - Lonnie King Jr.",
+        "If we can topple Rich’s, all we have to do is just kind of whisper to the others. - Lonnie King Jr.",
+        "",
+        "You can't lead from behind - Lonnie King Jr.",
+        "We were exponents of the John Foster Fulles 'Domino Theory', When Rich's falls, thre rest of them will fall. - Lonnie King Jr."], "fixed": true},
+
+    {"x": 250, "y": 250, "name": "MLK Jr.", "source":"images/MLK_Profile_circle.png", "color": "#E988C4", 
+    "quote": ["I grew up with these people. They'll eat me alive if I make a mistake. - Martin Luther King Jr.", 
+              "Here, we have all the forces on both sides, but the forces of defiance are not as strong as those who realize it's futile to stand on the beaches of history and try to hold back the tide. - Martin Luther King Jr.",
+              "",
+              "I do not feel we did anything wrong in going to Rich’s today and seeking to be served. We went there peacefully, non-violently, and in the spirit of love. - Martin Luther King Jr.",
+              "",
+              "Many of us hoped it would not come to such a point. And many of us knew it had to. - Martin Luther King Jr."], "fixed": true},
+
+    {"x": 400, "y": 250, "name": "Julian Bond", "source":"images/Julian_Bond_circle.png", "color": "#E988C4", 
+    "quote": ["He was a hometown boy.. so it was hard for us to look at him as Martin Luther King, Jr. It was hard for us to revere him, I think, the way other people did. -Julian Bond",
+             "",
+             "",
+              "We do not intend to wait placidly for those rights which are legally and morally ours to be meted out to us one at a time. -Julian Bond",
+              "","",
+              "That's something he NEVER should have said. - Julian Bond"], "fixed": true},
+    
+    {"x": 550, "y": 250, "name": "Rufus Clement", "source":"images/Rufus_Clement_circle.png", "color": "#E988C4", 
+    "quote": ["", 
+        "",
+        "We are not going to tell you what you can or can't do but let us give you some advice. Before you take action, picketing or demonstrating, you should draw up a bill of particulars as to what your grievances are. If you do a good job, we will see that it gets printed in the local newspapers. - Rufus Clement",
+        "",
+        "Hope there would be no more demonstrations - Rufus Clement"], "fixed": true},
+    
+    {"x": 700, "y": 250, "name": "John Lewis", "source":"images/John_lewis_circle.png", "color": "#E988C4", 
+    "quote": ["",
+        "",
+        "",
+        "We were all about a “mass movement, an irre-sistible  movement of the masses. Not a handful of lawyers in a closed court-room, but hundreds, thousands of everyday people ..taking their cause and belief to the streets. -John Lewis", "FOR EVENT 3"], "fixed": true},
+    
+    {"x": 850, "y": 250, "name": "Carolyn Long Banks", "source":"images/Carolyn_Long_Banks_circle.png", "color": "#E988C4", 
+    "quote": ["","","","","","","","","",
+        "I [am] one of the many persons he arrested. It was Chief Jenkins who protected us—who made sure that even though we were determined to be arrested, that we were going to be arrested kindly and gently. - Carolyn Long Banks"], "fixed": true},
    
     
-    {"x": 100, "y": 350, "name": "Ivan Allen Jr.", "source":"images/Ivan_Allen_jr_circle.png", "color": "#3D79F2", "quote": "We won't let this happen here", "neighbors": [2,3,4], "fixed": true},
-    {"x": 250, "y": 350, "name": "William Hartsfield", "source":"images/william-hartsfield_circle.png", "color": "#3D79F2", "quote": "We are a city too busy to hate. Atlanta does not cling to the past. People who swear on the old Southern traditions don't know what the hell they are.", "neighbors": [2,3,4], "fixed": true},
-    {"x": 400, "y": 350, "name": "Ralph McGill", "source":"images/Ralph_McGill_circle.png", "color": "#3D79F2", "quote": ["Quote1", "Quote11", "Quote111"], "neighbors": [2,3,4], "fixed": true},
-    {"x": 550, "y": 350, "name": "Herbert Jenkins", "source":"images/Herbert_Jenkins_circle.png", "color": "#3D79F2", "quote": "Quote2", "neighbors": [2,3,4], "fixed": true},
+    {"x": 100, "y": 350, "name": "Ivan Allen Jr.", "source":"images/Ivan_Allen_jr_circle.png", "color": "#3D79F2", 
+    "quote": ["", 
+        "We won't let this happen here -Ivan Allen Jr.",
+        "","","","", "",
+        "The minute I got into it, it was showing, this great antagonism of race. You'd begin to learn as you went along. - Ivan Allen Jr."], "fixed": true},
     
-    {"x": 100, "y": 450, "name": "Calvin L. Craig", "source":"images/Craig_kkk_circle.png", "color": "#30BD8A","quote": "We are for the Christian-Protestant religion, the U.S. Government and Constitution thereof and , of course, White Supremacy", "neighbors": [2,3,4], "fixed": true},
-    {"x": 250, "y": 450, "name": "Ernest Vandiver", "source":"images/ernest_vandiver_circle.png", "color": "#30BD8A", "quote": "Wherever M.L.King, Jr., has been there has followed in his wake a wave of crimes including stabbing, bombings, and inciting of riots, barratry, destruction of propoerty and many others.For these reasons, he is not welcome to Georgia.", "neighbors": [2,3,4], "fixed": true},
-    {"x": 400, "y": 450, "name": "Lester Maddox", "source":"images/Lestor_Maddox_circle.png", "color": "#30BD8A", "quote": "Most people feel as we do, but they're just not organized.", "neighbors": [2,3,4], "fixed": true},
-    {"x": 550, "y": 450, "name": "Richard H. Rich", "source":"images/rich_circle.png", "color": "#30BD8A", "quote": "I didn't care if another Negro EVER comes into my store", "neighbors": [2,3,4], "fixed": true}
+    {"x": 250, "y": 350, "name": "William Hartsfield", "source":"images/william-hartsfield_circle.png", "color": "#3D79F2", 
+    "quote": ["",
+        "We are a city too busy to hate. Atlanta does not cling to the past. People who swear on the old Southern traditions don't know what the hell they are. - William Hartsfield",
+        "",
+        "Constructive. It must be admitted that some of the things expressed...are after all, the legitimate aspirations of young people throughout the nation and the world. - William Hartsfield"], "fixed": true},
+    
+    {"x": 400, "y": 350, "name": "Ralph McGill", "source":"images/Ralph_McGill_circle.png", "color": "#3D79F2", 
+    "quote": [
+
+        "", "", "","", "We are better than the world has seen us at Little Rock, at New Orleans and at Tuscaloosa. The students at Georgia have a God-sent opportunity to rescue their own institution, their South and themselves by a simple act of compassion and decency. - Ralph McGill"], "fixed": true},
+    
+    {"x": 550, "y": 350, "name": "Herbert Jenkins", "source":"images/Herbert_Jenkins_circle.png", "color": "#3D79F2", 
+    "quote": ["","","","","","I am turning you - Herbert Jenkins"], "fixed": true},
+    
+    {"x": 100, "y": 450, "name": "Calvin L. Craig", "source":"images/Craig_kkk_circle.png", "color": "#30BD8A",
+    "quote": ["",
+        "We are for the Christian-Protestant religion, the U.S. Government and Constitution thereof and , of course, White Supremacy"], "fixed": true},
+    
+    {"x": 250, "y": 450, "name": "Ernest Vandiver", "source":"images/ernest_vandiver_circle.png", "color": "#30BD8A", 
+    "quote": ["Wherever M.L.King, Jr., has been there has followed in his wake a wave of crimes including stabbing, bombings, and inciting of riots, barratry, destruction of propoerty and many others.For these reasons, he is not welcome to Georgia. -Ernest Vandiver",
+        "",
+        "",
+        "A left-wing statement, calculated to breed dissatisfaction, discontent, discord and evil. - Ernest Vandiver",
+        "",
+        "No, not one-not a single black child would attend a white school in Georgia while I am a governor - Ernest Vandiver"], "fixed": true},
+    
+    {"x": 400, "y": 450, "name": "Lester Maddox", "source":"images/Lestor_Maddox_circle.png", "color": "#30BD8A", 
+    "quote": "Most people feel as we do, but they're just not organized.", "fixed": true},
+    
+    {"x": 550, "y": 450, "name": "Richard H. Rich", "source":"images/rich_circle.png", "color": "#30BD8A", 
+    "quote": ["","","","","","",
+
+        "I didn't care if another Negro EVER comes into my store - Richard H. Rich"], "fixed": true}
 
 
   ],
